@@ -1,0 +1,35 @@
+@media print {
+
+  body {
+    background: white !important;
+    color: black !important;
+  }
+
+  aside,
+  nav,
+  header,
+  button {
+    display: none !important;
+  }
+
+  main {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+  }
+
+  #patient-summary {
+    width: 100%;
+    padding: 10px;
+  }
+
+  section {
+    break-inside: avoid;
+    box-shadow: none !important;
+  }
+
+  @page {
+    size: A4;
+    margin: 15mm;
+  }
+}
