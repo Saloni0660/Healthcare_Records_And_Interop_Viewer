@@ -1,0 +1,72 @@
+{
+  "resourceType": "Bundle",
+  "id": "healthcare-demo-001",
+  "type": "collection",
+  "patient": {
+    "id": "P001",
+    "name": "Aarav Sharma",
+    "gender": "Male",
+    "birthDate": "2002-05-14",
+    "bloodGroup": "O+",
+    "phone": "+91 9876543210"
+  },
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "E001",
+        "status": "finished",
+        "type": "General Consultation",
+        "date": "2026-09-12",
+        "doctor": "Dr. Mehta",
+        "department": "General Medicine",
+        "reason": "Routine health checkup"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "O001",
+        "status": "final",
+        "type": "Blood Pressure",
+        "date": "2026-09-12",
+        "value": "120/80",
+        "unit": "mmHg",
+        "interpretation": "Normal"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "O002",
+        "status": "final",
+        "type": "Blood Glucose",
+        "date": "2026-09-12",
+        "value": "95",
+        "unit": "mg/dL",
+        "interpretation": "Normal"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationStatement",
+        "id": "M001",
+        "status": "active",
+        "medication": "Vitamin D3",
+        "dosage": "Once daily",
+        "date": "2026-09-12",
+        "duration": "30 days"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "C001",
+        "status": "active",
+        "condition": "Vitamin D Deficiency",
+        "date": "2026-09-12",
+        "severity": "Mild"
+      }
+    }
+  ]
+}
